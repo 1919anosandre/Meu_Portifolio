@@ -99,8 +99,7 @@ nav ul .Container-nav li:hover {
 
 .text-content h1,
 .Container-Sobre h1,
-.Container-Sobre h2,
-.Container-Projetos h1 {
+.Container-Sobre h2 {
     font-size: 35px;
     color: rgb(255, 255, 255);
     padding: 10px 30%;
@@ -150,7 +149,7 @@ nav ul .Container-nav li:hover {
 
 .Meus-Projetos {
     background-color: rgba(109, 51, 45, 0.425);
-    height: 350px;
+    height: 290px;
     width: 100%;
     max-width: 290px;
     margin-top: 15px;
@@ -161,6 +160,13 @@ nav ul .Container-nav li:hover {
     display: flex;
 }
 
+.Meus-Projetos h1 {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
 .Meus-Projetos img {
     height: 200px;
     width: 100%;
@@ -168,6 +174,7 @@ nav ul .Container-nav li:hover {
     align-items: center;
     padding: 1px 2%;
     border-radius: 7px;
+    margin-top: 5px;
 }
 
 .Meus-Projetos a {
@@ -188,27 +195,116 @@ nav ul .Container-nav li:hover {
 /* dispositivos móveis  */
 
 @media all and (max-width: 767px) {
+    body {
+        padding: 0 10px;
+        /* Adicionado padding ao corpo para melhor visualização em telas pequenas */
+    }
+
+    .Container-nav li {
+        font-size: 0.9rem;
+    }
+
+    .Container-nav {
+        flex-direction: column;
+    }
 
     .Container-Principal {
         flex-direction: column;
         align-items: center;
+        padding: 20px 0;
+        /* Adicionado padding para espaçamento interno */
     }
 
     .text-content h1 {
         text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        /* Adicionado margem inferior para espaçamento */
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+        text-align: center;
+        /* Centralizado texto para melhor alinhamento */
+        margin-bottom: 15px;
+        /* Adicionado margem inferior para espaçamento */
     }
 
     .Container-Principal img {
-        width: 270px;
+        width: 80%;
+        /* Ajustado o tamanho da imagem para ocupar mais espaço horizontal */
         text-align: center;
-        margin-right: 20px;
-        margin-top: 15px;
-
+        margin: 15px 0;
+        /* Margem ajustada para separar imagem do texto */
     }
 
-    .Container-Sobre {}
+    section {
+        width: 100%;
+        padding: 20px 0;
+        /* Adicionado padding para espaçamento interno */
+    }
 
+    .Container-Projetos {
+        flex-direction: column;
+        align-items: center;
+        /* Centralizar conteúdo */
+        padding: 20px 0;
+        /* Adicionado padding para espaçamento interno */
+    }
 
+    .Meus-Projetos {
+        width: 100%;
+        text-align: center;
+        /* Centralizado texto */
+        margin-bottom: 20px;
+        /* Adicionado margem inferior para espaçamento */
+    }
 
-    .Container-img {}
+    .Container-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Centralizar imagens */
+        gap: 15px;
+        /* Espaçamento entre imagens */
+    }
+
+    .Container-Sobre {
+        overflow-y: auto;
+        padding: 20px 10px;
+        /* Adicionado padding para espaçamento interno */
+    }
+
+    .Container-Sobre h1,
+    .Container-Sobre h2 {
+        font-size: 1rem;
+        text-align: center;
+        /* Centralizado texto */
+        margin-bottom: 10px;
+        /* Adicionado margem inferior para espaçamento */
+    }
+
+    .Container-Sobre p {
+        font-size: 0.9rem;
+        padding: 5px 10%;
+        text-align: center;
+        /* Centralizado texto */
+        margin-bottom: 15px;
+        /* Adicionado margem inferior para espaçamento */
+    }
+
+    .Container-Sobre img {
+        height: 70px;
+        display: block;
+        margin: 0 auto;
+        /* Centralizar imagem */
+    }
+
+    #myChart {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        /* Centralizar gráfico */
+        display: block;
+    }
 }
