@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     text-transform: capitalize;
+    user-select: none;
+
     font-family: 'Nunito Sans', sans-serif;
 
 }
@@ -10,7 +12,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background-color: rgb(36, 31, 31);
+    background-color: rgb(20, 17, 17);
     box-sizing: border-box;
 }
 
@@ -97,7 +99,16 @@ nav ul .Container-nav li:hover {
     justify-content: center;
 }
 
-.text-content h1,
+.text-content h1{
+    font-weight: bold;
+    background: linear-gradient(45deg, rgb(248, 250, 240), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 40px;
+    padding: 10px 30%;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
 .Container-Sobre h1,
 .Container-Sobre h2 {
     font-size: 35px;
@@ -148,7 +159,7 @@ nav ul .Container-nav li:hover {
 
 
 .Meus-Projetos {
-    background-color: rgba(109, 51, 45, 0.425);
+    background-color: rgba(109, 51, 45, 0.281);
     height: 290px;
     width: 100%;
     max-width: 290px;
@@ -217,13 +228,13 @@ nav ul .Container-nav li:hover {
 
     .text-content h1 {
         text-align: center;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         margin-bottom: 10px;
         /* Adicionado margem inferior para espaçamento */
     }
 
     .text-content p {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         text-align: center;
         /* Centralizado texto para melhor alinhamento */
         margin-bottom: 15px;
