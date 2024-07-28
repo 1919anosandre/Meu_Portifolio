@@ -40,11 +40,15 @@ nav ul .Container-nav {
     display: flex;
     justify-content: space-around;
     top: 0;
-    padding: 10px 9%;
+    align-items: center;
+    padding: 10px 12px;
+    background-color: #1e3a5f;
+    position: fixed;
+    width: 100%;
 }
 
 nav ul .Container-nav li {
-    color: #ccc;
+    color: #ffa500;
     font-size: 1.3rem;
     list-style: none;
     font-weight: 700;
@@ -101,9 +105,7 @@ nav ul .Container-nav li:hover {
 
 .text-content h1{
     font-weight: bold;
-    background: linear-gradient(45deg, rgb(248, 250, 240), rgb(0, 0, 0));
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #ffa500;
     font-size: 40px;
     padding: 10px 30%;
     font-weight: 700;
@@ -112,7 +114,7 @@ nav ul .Container-nav li:hover {
 .Container-Sobre h1,
 .Container-Sobre h2 {
     font-size: 35px;
-    color: rgb(255, 255, 255);
+    color: #ffd700;
     padding: 10px 30%;
     font-weight: 700;
     letter-spacing: 2px;
@@ -122,7 +124,7 @@ nav ul .Container-nav li:hover {
 .Container-Sobre p {
     font-size: 20px;
     padding: 10px 10%;
-    color: white;
+    color: #ccc;
     font-weight: 600;
 
 }
@@ -173,7 +175,7 @@ nav ul .Container-nav li:hover {
 }
 
 .Meus-Projetos h1 {
-    color: rgb(255, 255, 255);
+    color: #ffd700;
     font-size: 22px;
     letter-spacing: 1px;
     font-weight: 600;
@@ -213,11 +215,12 @@ nav ul .Container-nav li:hover {
     }
 
     .Container-nav li {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .Container-nav {
-        flex-direction: column;
+        width: 100%;
+        margin: 0 3px;
     }
 
     .Container-Principal {
